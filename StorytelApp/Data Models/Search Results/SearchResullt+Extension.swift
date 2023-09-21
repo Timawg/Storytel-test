@@ -21,7 +21,6 @@ extension SearchResult.Item {
 }
 
 extension SearchResult.Item.Format.Cover {
-    
     var isSquared: Bool {
         return width == height
     }

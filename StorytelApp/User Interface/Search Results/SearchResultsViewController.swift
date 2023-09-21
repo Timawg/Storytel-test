@@ -1,6 +1,6 @@
 import UIKit
 
-final class SearchResultsViewController: UIViewController {
+final class SearchResultsViewController: UIViewController, UISearchBarDelegate {
     
     private enum Section {
         case items
@@ -14,6 +14,11 @@ final class SearchResultsViewController: UIViewController {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
+    }()
+    
+    private lazy var searchBar: UISearchBar = {
+        let searchBar = UISearchBar()
+        return searchBar
     }()
 
     private lazy var loadingIndicator: UIActivityIndicatorView = {
@@ -49,6 +54,8 @@ final class SearchResultsViewController: UIViewController {
         tableView.prefetchDataSource = self
         tableView.rowHeight = 200
         tableView.tableFooterView = loadingIndicator
+        searchBar.delegate = self
+        navigationItem.titleView = searchBar
     }
     
     private func activateConstraints() {
@@ -60,24 +67,36 @@ final class SearchResultsViewController: UIViewController {
         ])
     }
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard !searchText.isEmpty else { return }
+        retrieveItems(query: searchText, initialRetrieval: true)
+    }
     
-    private func retrieveItems(initialRetrieval: Bool = false) {
+    private func retrieveItems(query: String? = nil, initialRetrieval: Bool = false) {
         loadingIndicator.startAnimating()
-        searchTask = Task(priority: .userInitiated) {
-            do {
+        searchTask = Task(priority: .high) {
+            do {                
                 try Task.checkCancellation()
-                let items = try await viewModel.performSearch()
                 var snapshot = initialRetrieval ? NSDiffableDataSourceSnapshot<Section, SearchResultCellViewModel>() : dataSource.snapshot()
-                if initialRetrieval {
-                    snapshot.appendSections([Section.items])
-                    snapshot.appendItems(items, toSection: .items)
-                } else {
-                    snapshot.appendItems(items, toSection: .items)
-                }
                 
-                dataSource.apply(snapshot, animatingDifferences: !initialRetrieval) { [weak self] in
-                    self?.loadingIndicator.stopAnimating()
+                let items = try await {
+                    if let query {
+                       return try await viewModel.performSearch(query: query)
+                    } else {
+                        return try await viewModel.performSearch()
+                    }
+                }()
+                
+                if !snapshot.sectionIdentifiers.contains(.items) {
+                    snapshot.appendSections([.items])
                 }
+                snapshot.appendItems(items, toSection: .items)
+                
+                    dataSource.apply(snapshot, animatingDifferences: !initialRetrieval) { [weak self] in
+                        self?.loadingIndicator.stopAnimating()
+                    }
+                
+
             } catch {
                 loadingIndicator.stopAnimating()
                 handle(error: error)
@@ -89,8 +108,8 @@ final class SearchResultsViewController: UIViewController {
         switch error {
         case is CancellationError:
             print(error.localizedDescription)
-        case is URLError:
-            if let error = error as? URLError, error.code == .cancelled {
+        case let error as URLError:
+            if error.code == .cancelled {
                 print(error.localizedDescription)
             } else {
                 presentAlert(error: error)
@@ -114,18 +133,11 @@ final class SearchResultsViewController: UIViewController {
 extension SearchResultsViewController: UITableViewDataSourcePrefetching {
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
         
-        let fullyVisibleIndexPaths = tableView.indexPathsForVisibleRows?.filter { indexPath in
-            let cellFrame = tableView.rectForRow(at: indexPath)
-            let isCellFullyVisible = tableView.bounds.contains(cellFrame)
-            return isCellFullyVisible
-        }.count ?? 0
-        
-        let currentItemCount = dataSource.snapshot().itemIdentifiers.count
-        guard let lastIndexPath = indexPaths.last?.row,
-              lastIndexPath >= currentItemCount - max(fullyVisibleIndexPaths, 4) else { return
+        let visibleIndexPaths = CGFloat(tableView.indexPathsForVisibleRows?.count ?? 0)
+
+        if tableView.bounds.height / tableView.rowHeight > visibleIndexPaths {
+            retrieveItems()
         }
-        
-        retrieveItems()
     }
     
     func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {

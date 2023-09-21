@@ -17,7 +17,7 @@ final class ImageDownloaderTests: XCTestCase {
         imageDownloader.clearImageCache()
     }
     
-    func testSuccessfulImageResponse() throws {
+    func testSuccessfulImageResponse() async throws {
         let networkService = NetworkServiceMock<Data>()
         let expectedImage = UIImage(systemName: "questionmark.circle.fill")
         let imageData = try XCTUnwrap(expectedImage?.pngData())
@@ -25,17 +25,15 @@ final class ImageDownloaderTests: XCTestCase {
         InjectedValues[\.networkService] = networkService
         
         let expectation = XCTestExpectation()
-        Task {
-            do {
-                let _ = try await imageDownloader.downloadImage(for:"http://www.example.com")
-                
-                expectation.fulfill()
-            } catch {
-                XCTFail(error.localizedDescription)
-            }
+ 
+        do {
+            let _ = try await imageDownloader.downloadImage(for:"http://www.example.com")
+            
+            expectation.fulfill()
+        } catch {
+            XCTFail(error.localizedDescription)
         }
-        
-        wait(for: [expectation], timeout: 1)
+
     }
     
     func testBadURLErrorResponse() throws {

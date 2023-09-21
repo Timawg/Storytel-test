@@ -7,62 +7,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FE9F6B28-F5BE-4BDC-9D17-42E5D170524F"
+            uuid = "59580B10-2D9D-4E47-BC46-B49E2ED38C6E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StorytelApp/SearchResultsViewController.swift"
+            filePath = "StorytelApp/User Interface/Search Results/SearchResultsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "setupTableView()"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "retrieveItems(query:initialRetrieval:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "FE9F6B28-F5BE-4BDC-9D17-42E5D170524F - 694197dddc9bdd18"
+                  uuid = "59580B10-2D9D-4E47-BC46-B49E2ED38C6E - c48ad4244469e919"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "StorytelApp.SearchResultsViewController.activateConstraints() -&gt; ()"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in StorytelApp.SearchResultsViewController.retrieveItems(query: Swift.Optional&lt;Swift.String&gt;, initialRetrieval: Swift.Bool) -&gt; ()"
                   moduleName = "StorytelApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/timgunnarsson/Downloads/Storytel-iOS/StorytelApp/SearchResultsViewController.swift"
+                  urlString = "file:///Users/timgunnarsson/Documents/GitHub/Storytel-iOS-Tim%20Gunnarsson/Storytel-test/StorytelApp/User%20Interface/Search%20Results/SearchResultsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "72">
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "784">
                </Location>
                <Location
-                  uuid = "FE9F6B28-F5BE-4BDC-9D17-42E5D170524F - 5a58b654934e9b14"
+                  uuid = "59580B10-2D9D-4E47-BC46-B49E2ED38C6E - a856b1c09ee36304"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "StorytelApp.SearchResultsViewController.setupTableView() -&gt; ()"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in StorytelApp.SearchResultsViewController.retrieveItems(query: Swift.Optional&lt;Swift.String&gt;, initialRetrieval: Swift.Bool) -&gt; ()"
                   moduleName = "StorytelApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/timgunnarsson/Downloads/Storytel-iOS/StorytelApp/SearchResultsViewController.swift"
+                  urlString = "file:///Users/timgunnarsson/Documents/GitHub/Storytel-iOS-Tim%20Gunnarsson/Storytel-test/StorytelApp/User%20Interface/Search%20Results/SearchResultsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "616">
-               </Location>
-               <Location
-                  uuid = "FE9F6B28-F5BE-4BDC-9D17-42E5D170524F - 5a58b654934e9b6b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "StorytelApp.SearchResultsViewController.setupTableView() -&gt; ()"
-                  moduleName = "StorytelApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/timgunnarsson/Downloads/Storytel-iOS/StorytelApp/SearchResultsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "692">
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "292">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -70,107 +55,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "27F0A588-DE8D-4A41-A093-DF472BBA89F1"
+            uuid = "CE295DAB-55A1-4A78-B004-1C3B70028F43"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StorytelApp/SearchResultsViewController.swift"
+            filePath = "StorytelApp/User Interface/Search Results/SearchResultsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "retrieveItems(initialRetrieval:)"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "retrieveItems(query:initialRetrieval:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "27F0A588-DE8D-4A41-A093-DF472BBA89F1 - e875d2f0c0122709"
+                  uuid = "CE295DAB-55A1-4A78-B004-1C3B70028F43 - c48ad4244469e938"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "StorytelApp.SearchResultsViewController.retrieveItems(initialRetrieval: Swift.Bool) -&gt; ()"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in StorytelApp.SearchResultsViewController.retrieveItems(query: Swift.Optional&lt;Swift.String&gt;, initialRetrieval: Swift.Bool) -&gt; ()"
                   moduleName = "StorytelApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/timgunnarsson/Downloads/Storytel-iOS/StorytelApp/SearchResultsViewController.swift"
+                  urlString = "file:///Users/timgunnarsson/Documents/GitHub/Storytel-iOS-Tim%20Gunnarsson/Storytel-test/StorytelApp/User%20Interface/Search%20Results/SearchResultsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "1264">
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "852">
                </Location>
                <Location
-                  uuid = "27F0A588-DE8D-4A41-A093-DF472BBA89F1 - e875d2f0c0122709"
+                  uuid = "CE295DAB-55A1-4A78-B004-1C3B70028F43 - a856b1c09ee36325"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "StorytelApp.SearchResultsViewController.retrieveItems(initialRetrieval: Swift.Bool) -&gt; ()"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in StorytelApp.SearchResultsViewController.retrieveItems(query: Swift.Optional&lt;Swift.String&gt;, initialRetrieval: Swift.Bool) -&gt; ()"
                   moduleName = "StorytelApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/timgunnarsson/Downloads/Storytel-iOS/StorytelApp/SearchResultsViewController.swift"
+                  urlString = "file:///Users/timgunnarsson/Documents/GitHub/Storytel-iOS-Tim%20Gunnarsson/Storytel-test/StorytelApp/User%20Interface/Search%20Results/SearchResultsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "2276">
-               </Location>
-               <Location
-                  uuid = "27F0A588-DE8D-4A41-A093-DF472BBA89F1 - 1aab6d802b1868ea"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; Swift.Array&lt;StorytelApp.SearchResultCellViewModel&gt; in StorytelApp.SearchResultsViewController.retrieveItems(initialRetrieval: Swift.Bool) -&gt; ()"
-                  moduleName = "StorytelApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/timgunnarsson/Downloads/Storytel-iOS/StorytelApp/SearchResultsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "568">
-               </Location>
-               <Location
-                  uuid = "27F0A588-DE8D-4A41-A093-DF472BBA89F1 - 30b99b1f78859b26"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 @Sendable () async -&gt; Swift.Array&lt;StorytelApp.SearchResultCellViewModel&gt; in StorytelApp.SearchResultsViewController.retrieveItems(initialRetrieval: Swift.Bool) -&gt; ()"
-                  moduleName = "StorytelApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/timgunnarsson/Downloads/Storytel-iOS/StorytelApp/SearchResultsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  uuid = "27F0A588-DE8D-4A41-A093-DF472BBA89F1 - 19ce9556be275af"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;StorytelApp.SearchResultCellViewModel&gt; in StorytelApp.SearchResultsViewController.retrieveItems(initialRetrieval: Swift.Bool) -&gt; ()"
-                  moduleName = "StorytelApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/timgunnarsson/Downloads/Storytel-iOS/StorytelApp/SearchResultsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "81"
-                  endingLineNumber = "81"
-                  offsetFromSymbolStart = "568">
-               </Location>
-               <Location
-                  uuid = "27F0A588-DE8D-4A41-A093-DF472BBA89F1 - d951eff578f92381"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 @Sendable () async throws -&gt; Swift.Array&lt;StorytelApp.SearchResultCellViewModel&gt; in StorytelApp.SearchResultsViewController.retrieveItems(initialRetrieval: Swift.Bool) -&gt; ()"
-                  moduleName = "StorytelApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/timgunnarsson/Downloads/Storytel-iOS/StorytelApp/SearchResultsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "81"
-                  endingLineNumber = "81"
-                  offsetFromSymbolStart = "20">
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "360">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -178,17 +103,125 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8E67A2D1-6BD8-4F0A-9559-3805B5C72FBA"
+            uuid = "A69F263A-D445-4684-B587-DA4720C478C6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StorytelApp/SearchResultsViewController.swift"
+            filePath = "StorytelApp/User Interface/Search Results/SearchResultsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "tableView(_:cancelPrefetchingForRowsAt:)"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "handle(error:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C089847B-FB54-4C1E-8D23-2B9206159C55"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StorytelApp/View Models/Search Results/SearchResultsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "performSearch(query:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C089847B-FB54-4C1E-8D23-2B9206159C55 - a37c6d4cae6e1aa8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StorytelApp.SearchResultsViewModel.performSearch(query: Swift.String) async throws -&gt; Swift.Array&lt;StorytelApp.SearchResultCellViewModel&gt;"
+                  moduleName = "StorytelApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timgunnarsson/Documents/GitHub/Storytel-iOS-Tim%20Gunnarsson/Storytel-test/StorytelApp/View%20Models/Search%20Results/SearchResultsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "C089847B-FB54-4C1E-8D23-2B9206159C55 - 964212d1431b03c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for StorytelApp.SearchResultsViewModel.performSearch(query: Swift.String) async throws -&gt; Swift.Array&lt;StorytelApp.SearchResultCellViewModel&gt;"
+                  moduleName = "StorytelApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timgunnarsson/Documents/GitHub/Storytel-iOS-Tim%20Gunnarsson/Storytel-test/StorytelApp/View%20Models/Search%20Results/SearchResultsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "C089847B-FB54-4C1E-8D23-2B9206159C55 - e71c598203a8a1ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for StorytelApp.SearchResultsViewModel.performSearch(query: Swift.String) async throws -&gt; Swift.Array&lt;StorytelApp.SearchResultCellViewModel&gt;"
+                  moduleName = "StorytelApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timgunnarsson/Documents/GitHub/Storytel-iOS-Tim%20Gunnarsson/Storytel-test/StorytelApp/View%20Models/Search%20Results/SearchResultsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "C089847B-FB54-4C1E-8D23-2B9206159C55 - fdd5bb6b2d32c7c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for StorytelApp.SearchResultsViewModel.performSearch(query: Swift.String) async throws -&gt; Swift.Array&lt;StorytelApp.SearchResultCellViewModel&gt;"
+                  moduleName = "StorytelApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timgunnarsson/Documents/GitHub/Storytel-iOS-Tim%20Gunnarsson/Storytel-test/StorytelApp/View%20Models/Search%20Results/SearchResultsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "C089847B-FB54-4C1E-8D23-2B9206159C55 - 6f1f9040202619c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for StorytelApp.SearchResultsViewModel.performSearch(query: Swift.String) async throws -&gt; Swift.Array&lt;StorytelApp.SearchResultCellViewModel&gt;"
+                  moduleName = "StorytelApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timgunnarsson/Documents/GitHub/Storytel-iOS-Tim%20Gunnarsson/Storytel-test/StorytelApp/View%20Models/Search%20Results/SearchResultsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "C089847B-FB54-4C1E-8D23-2B9206159C55 - fdd5bb6b2d32c7c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for StorytelApp.SearchResultsViewModel.performSearch(query: Swift.String) async throws -&gt; Swift.Array&lt;StorytelApp.SearchResultCellViewModel&gt;"
+                  moduleName = "StorytelApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timgunnarsson/Documents/GitHub/Storytel-iOS-Tim%20Gunnarsson/Storytel-test/StorytelApp/View%20Models/Search%20Results/SearchResultsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "396">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

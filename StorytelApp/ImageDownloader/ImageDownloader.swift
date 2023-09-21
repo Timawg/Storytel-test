@@ -22,7 +22,7 @@ final class ImageDownloader: ImageDownloadingProtocol {
     init(imageCache: ImageCache = .shared) {
         self.imageCache = imageCache
     }
-    
+
     func downloadImage(for url: String) async throws -> UIImage? {
         if let image = cachedImage(for: url) {
             return image

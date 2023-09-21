@@ -23,7 +23,7 @@ struct SearchResultCellViewModel: Hashable {
     private var cover: Cover? {
         return item.formats.first(where: \.cover.isSquared)?.cover ?? item.formats.first?.cover
     }
-    
+
     var imageAspectRatio: CGFloat {
         guard let height = cover?.height, let width = cover?.width else { return 1 }
         return CGFloat(width) / CGFloat(height)
